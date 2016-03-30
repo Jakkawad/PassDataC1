@@ -31,8 +31,12 @@
                                             <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="gWU-ZV-IOG">
+                                                    <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="5Wc-b4-0s6">
-                                                    <rect key="frame" x="0.0" y="39" width="100" height="21"/>
+                                                    <rect key="frame" x="0.0" y="79" width="100" height="21"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -43,6 +47,7 @@
                                         </view>
                                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <connections>
+                                            <outlet property="imageViewProduct" destination="gWU-ZV-IOG" id="Dsl-Mz-F8S"/>
                                             <outlet property="lblName" destination="5Wc-b4-0s6" id="zY2-3p-obr"/>
                                             <segue destination="YNK-iE-NcR" kind="push" identifier="ProductDetailSegue" id="ec9-56-5IQ"/>
                                         </connections>
@@ -98,6 +103,22 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="ywz-vH-3RY">
+                                <rect key="frame" x="0.0" y="524" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <items>
+                                    <barButtonItem title="เพิ่มสินค้า" id="qe8-Y6-l4t">
+                                        <connections>
+                                            <segue destination="MNw-xN-a8a" kind="push" id="0ar-yF-4rR"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem title="ตะกร้าสินค้า" id="gqw-7R-grM">
+                                        <connections>
+                                            <segue destination="qg6-2T-o30" kind="push" id="mTC-ch-anc"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -112,6 +133,54 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Cv3-SX-4Vc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1123" y="396"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="4wS-o1-S2d">
+            <objects>
+                <viewController id="MNw-xN-a8a" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="q9Y-CI-7MX">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="UHB-cJ-vnV">
+                                <rect key="frame" x="61" y="106" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Lo8-GR-6IA"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TaD-nc-Eui" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1525" y="396"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="dZt-xD-dne">
+            <objects>
+                <viewController id="qg6-2T-o30" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="IED-RE-NUo">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Qa5-tV-kO9">
+                                <rect key="frame" x="240" y="227" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="A60-Tl-Xa2"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BS8-ko-wo8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1525" y="1006"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="fpz-z6-Wn7">

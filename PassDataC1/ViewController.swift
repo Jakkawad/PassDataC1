@@ -38,7 +38,7 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
     }
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if segue.identifier == "ProductDetailSegue" {
-            print("segue")
+            //print("segue")
             let indexPath = self.mainCollectionView.indexPathsForSelectedItems()?.last
             //print(indexPath)
             let AA = self.mainArray[(indexPath?.row)!]
@@ -78,7 +78,11 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
         let col1 = collectionView.dequeueReusableCellWithReuseIdentifier("collectCell1", forIndexPath: indexPath) as? CustomCollectionViewCell
         let item = self.mainArray[indexPath.row] as! NSDictionary
         col1?.lblName.text = item.objectForKey("ProductName") as? String
-        
+        let imageURL = item.objectForKey("ProductShowImage") as? String
+        var wwwURL = "https://www.all2sale.com/store/"
+        wwwURL += imageURL!
+        let imageURL2 = NSURL(string: wwwURL)
+        col1?.imageViewProduct.setImageWithURL(imageURL2!)
         return col1!
     }
 
