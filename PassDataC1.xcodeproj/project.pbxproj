@@ -16,6 +16,7 @@
 		844C9C0A1CA927E400DDDF97 /* CustomCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844C9C091CA927E400DDDF97 /* CustomCollectionViewCell.swift */; };
 		844C9C0C1CA92A5F00DDDF97 /* ProductDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844C9C0B1CA92A5F00DDDF97 /* ProductDetailViewController.swift */; };
 		8451E99D1CABAAD0004823CF /* CartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8451E99C1CABAAD0004823CF /* CartViewController.swift */; };
+		8451E9E21CABD7CC004823CF /* CustomCartTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8451E9E11CABD7CC004823CF /* CustomCartTableViewCell.swift */; };
 		EA4CF9DB3B09A0327EAAA147 /* Pods_PassDataC1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71D351669CCD29E4F6EB1680 /* Pods_PassDataC1.framework */; };
 /* End PBXBuildFile section */
 
@@ -33,6 +34,7 @@
 		844C9C091CA927E400DDDF97 /* CustomCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomCollectionViewCell.swift; sourceTree = "<group>"; };
 		844C9C0B1CA92A5F00DDDF97 /* ProductDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductDetailViewController.swift; sourceTree = "<group>"; };
 		8451E99C1CABAAD0004823CF /* CartViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CartViewController.swift; sourceTree = "<group>"; };
+		8451E9E11CABD7CC004823CF /* CustomCartTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomCartTableViewCell.swift; sourceTree = "<group>"; };
 		AA604782946C038BAC14626D /* Pods-PassDataC1.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PassDataC1.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PassDataC1/Pods-PassDataC1.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -79,6 +81,7 @@
 				844C9C091CA927E400DDDF97 /* CustomCollectionViewCell.swift */,
 				844C9C0B1CA92A5F00DDDF97 /* ProductDetailViewController.swift */,
 				8451E99C1CABAAD0004823CF /* CartViewController.swift */,
+				8451E9E11CABD7CC004823CF /* CustomCartTableViewCell.swift */,
 			);
 			path = PassDataC1;
 			sourceTree = "<group>";
@@ -226,6 +229,7 @@
 			files = (
 				844C9BF81CA922D800DDDF97 /* ViewController.swift in Sources */,
 				844C9C0C1CA92A5F00DDDF97 /* ProductDetailViewController.swift in Sources */,
+				8451E9E21CABD7CC004823CF /* CustomCartTableViewCell.swift in Sources */,
 				8451E99D1CABAAD0004823CF /* CartViewController.swift in Sources */,
 				844C9C0A1CA927E400DDDF97 /* CustomCollectionViewCell.swift in Sources */,
 				844C9BF61CA922D800DDDF97 /* AppDelegate.swift in Sources */,
