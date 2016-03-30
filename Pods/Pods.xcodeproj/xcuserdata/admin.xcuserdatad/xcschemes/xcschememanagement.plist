@@ -9,6 +9,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>MapleBacon.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-PassDataC1.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -22,7 +27,12 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>F068D0C77FB561365E007DBFE7E14EDC</key>
+		<key>4C74A679E6D26C7AFD418A98CEA8BCC0</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>8EE2130E28914C9A846631C14A78F9F3</key>
 		<dict>
 			<key>primary</key>
 			<true/>

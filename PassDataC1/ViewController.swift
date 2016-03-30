@@ -29,9 +29,30 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
         //self.performSegueWithIdentifier("ProductDetailSegue", sender: self)
         //print("didSelectItemAtIndexPath\(self.mainArray[indexPath.row])")
         productDetail = self.mainArray[indexPath.row]
+        //self.performSegueWithIdentifier("ProductDetailSegue", sender: self)
         //print(productDetail)
+        //self.performSegueWithIdentifier("ProductDetailSegue", sender: productDetail)
+        //let destinationVC = ProductDetailViewController()
+        //destinationVC.productDetail = productDetail
+        //destinationVC.performSegueWithIdentifier("ProductDetailSegue", sender: self)
     }
-    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if segue.identifier == "ProductDetailSegue" {
+            print("segue")
+            let indexPath = self.mainCollectionView.indexPathsForSelectedItems()?.last
+            //print(indexPath)
+            let AA = self.mainArray[(indexPath?.row)!]
+            //print(AA)
+            let destinationVC = segue.destinationViewController as? ProductDetailViewController
+            
+            destinationVC?.productDetail = AA
+            //destinationVC?.title = "AAA"
+            //print(productDetail)
+        } else {
+            print("no segue")
+        }
+    }
+    /*
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if segue.identifier == "ProductDeatailSegue" {
             print(productDetail)
@@ -45,6 +66,7 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
             */
         }
     }
+    */
     
     
     func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
