@@ -14,13 +14,17 @@ class CustomCartTableViewCell: UITableViewCell {
     @IBOutlet weak var lblQty: UILabel!
     @IBOutlet weak var stepperQty: UIStepper!
 
-    @IBAction func AddQty(sender: AnyObject) {
-        
+    @IBAction func AddQty(sender: UIStepper) {
+        lblQty.text = Int(sender.value).description
     }
     
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
+        
+        stepperQty.wraps = true
+        stepperQty.autorepeat = true
+        
     }
 
     override func setSelected(selected: Bool, animated: Bool) {
